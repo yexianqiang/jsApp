@@ -1,0 +1,43 @@
+
+module.exports = [
+  {
+    path:'/',
+    name:'subject.mine',
+    component: require('../views/Mine.vue')
+  },
+  {
+    path:'/mine/list/:channel*',
+    name:'subject.mine.list',
+    component:require('../views/BuyList.vue')
+  },
+  {
+    path:'/mine/give',
+    name:'subject.mine.give',
+    component:require('../views/GiveList.vue')
+  },
+  {
+    path:'/mine/givedetail/:id(\\d+)/:state(\\d+)',
+    name:'subject.mine.givedetail',
+    component:require('../views/GiveDetail.vue')
+  },
+  {
+    path:'/mine/bindPhone',
+    name:'subject.mine.bindphone',
+    component:require('../views/BingPhone.vue')
+  },
+  {
+    path:'/mine/concern',
+    name:'teacher.concern.list',
+    component:require('../views/MyConcern.vue')
+  },
+  {
+    path:'/mine/store',
+    name:'article.store.list',
+    component:require('../views/MyStore.vue')
+  },
+  {
+    path:'/mine/order',
+    name:'article.order.list',
+    component:require('../views/myOrder.vue')
+  }
+];
